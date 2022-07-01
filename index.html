@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>My Calulator</title>
+        <link rel="stylesheet" href="cal.css">
+    </head>
+   <body>
+    <h1>My Calculator</h1>
+</body>
+    <form name="form1" class="calc" action="calc.html" method="POST">
+        <input type="text" name="ans" id="display">
+        <br>
+        <input type="button" class="btndesign" value="C" onclick="form1.ans.value=''">
+        <input type="button" class="btndesign"  value="<" onclick="form1.ans.value=form1.ans.value.substring(0,form1.ans.value.length*1-1)">
+        <input type="button" class="btndesign" value="00" onclick="form1.ans.value='00'">
+        <input type="button" class="opdesign" value="/" onclick="form1.ans.value+='/'">
+        <br>
+        <input type="button" class="btndesign" value="7" onclick="form1.ans.value+='7'">
+        <input type="button" class="btndesign" value="8" onclick="form1.ans.value+='8'">
+        <input type="button" class="btndesign" value="9" onclick="form1.ans.value+='9'">
+        <input type="button" class="opdesign" value="*" onclick="form1.ans.value+='*'">
+        <br>
+        <input type="button" class="btndesign" value="4" onclick="form1.ans.value+='4'">
+        <input type="button" class="btndesign" value="5" onclick="form1.ans.value+='5'">
+        <input type="button" class="btndesign" value="6" onclick="form1.ans.value+='6'">
+        <input type="button" class="opdesign" value="-" onclick="form1.ans.value+='-'">
+        <br>
+        <input type="button" class="btndesign" value="1" onclick="form1.ans.value+='1'">
+        <input type="button" class="btndesign" value="2" onclick="form1.ans.value+='2'">
+        <input type="button" class="btndesign" value="3" onclick="form1.ans.value+='3'">
+        <input type="button" class="opdesign" value="+" onclick="form1.ans.value+='+'">
+        <br>
+       
+        <input type="button" id="zero" value="0" onclick="form1.ans.value+='0'">
+        <input type="button" class="btndesign" value="." onclick="form1.ans.value='.'">
+        <input type="button" class="opdesign" value="=" onclick="form1.ans.value=eval(form1.ans.value)">
+
+       
+    </form>
+</html>
